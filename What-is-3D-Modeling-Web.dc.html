@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700;800&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  body { margin:0; background:#F7F5EF; }
+  a { color:#1B9DD9; text-decoration:none; }
+  a:hover { color:#0F2350; text-decoration:underline; }
+</style>
+<template id="__bundler_thumbnail" data-bg-color="#0F2350"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="#0F2350"></rect><rect x="30" y="30" width="40" height="40" rx="4" fill="none" stroke="#F5C118" stroke-width="5"></rect><rect x="42" y="52" width="16" height="12" fill="#F5C118"></rect></svg></template>
+</helmet>
+<div style="font-family:'Source Sans 3',system-ui,sans-serif;color:#1A2338;font-size:17px;line-height:1.55;background:#F7F5EF;min-height:100vh">
+  <header style="background:#0F2350;overflow:hidden">
+    <div style="max-width:1080px;margin:0 auto;padding:32px 24px 48px;display:flex;flex-wrap:wrap;align-items:center;gap:32px">
+      <div style="flex:1 1 420px;min-width:0">
+        <img src="uploads/UT_STEMActionCenter_InnovationHub_StackedH_M_WHT_NEG_RGB.png" alt="Utah STEM Action Center — Innovation Hub" style="height:40px;display:block">
+        <div style="font-size:13px;letter-spacing:0.24em;text-transform:uppercase;color:#F5C118;font-weight:700;margin-top:40px">Module 02</div>
+        <h1 style="font-family:'Bitter',Georgia,serif;font-weight:800;font-size:clamp(34px,5.5vw,56px);line-height:1.04;color:#fff;margin:10px 0 0;letter-spacing:-0.02em;text-wrap:balance">What is 3D Modeling?</h1>
+        <div style="width:72px;height:6px;background:#F5C118;border-radius:3px;margin-top:18px"></div>
+        <p style="font-size:19px;line-height:1.45;color:#B9C6E0;margin:16px 0 0;max-width:520px">Define 3D modeling and learn about its applications.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:24px">
+          <div style="background:#16306A;color:#fff;font-weight:600;font-size:15px;padding:8px 14px;border-radius:999px">Module 2 of 11</div>
+          <div style="background:#F5C118;color:#0F2350;font-weight:700;font-size:15px;padding:8px 14px;border-radius:999px">About 8 min</div>
+        </div>
+      </div>
+      <div style="flex:0 1 300px;margin:0 auto;position:relative;width:300px;max-width:100%;aspect-ratio:1;display:flex;align-items:center;justify-content:center">
+        <div style="position:absolute;inset:0;border-radius:50%;border:2px dashed rgba(245,193,24,0.35)"></div>
+        <div style="position:absolute;inset:8%;border-radius:50%;background:#16306A"></div>
+        <img src="assets/3d-printer.png" alt="Hand-drawn 3D printer" style="position:relative;width:84%;height:auto;display:block">
+      </div>
+    </div>
+  </header>
+
+  <main style="max-width:1080px;margin:0 auto;padding:48px 24px 64px;display:flex;flex-direction:column;gap:56px">
+    <section style="display:flex;flex-direction:column;gap:16px">
+      <div style="display:flex;align-items:center;gap:14px">
+        <div style="width:48px;height:48px;border-radius:50%;background:#0F2350;display:flex;align-items:center;justify-content:center;flex:none"><img src="assets/3d-printer.png" alt="" style="width:36px"></div>
+        <h2 style="font-family:'Bitter',Georgia,serif;font-size:28px;font-weight:800;color:#0F2350;margin:0">Overview</h2>
+        <div style="flex:1;height:2px;background:#E3DED2"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;align-items:stretch">
+        <div style="background:#fff;border:1px solid #E3DED2;border-radius:12px;padding:28px 32px;display:flex;flex-direction:column;gap:14px">
+          <p style="margin:0;text-wrap:pretty">[Definition of 3D modeling — what it is, and how a 3D model differs from a 2D drawing. Two or three sentences.]</p>
+          <p style="margin:0;color:#5A6377;text-wrap:pretty">[How 3D models are used — from video games and movies to product design, architecture, and medicine. Connect to why it matters for 3D printing.]</p>
+        </div>
+        <div style="border-radius:12px;overflow:hidden;min-height:260px;background:#fff;border:1px solid #E3DED2">
+          <x-import component-from-global-scope="image-slot" id="overview-img" shape="rect" placeholder="Drop an image: a 3D model on screen next to its printed object" style="display:block;width:100%;height:100%;min-height:260px" hint-size="100%,260px"></x-import>
+        </div>
+      </div>
+    </section>
+
+    <section style="display:flex;flex-direction:column;gap:16px">
+      <div style="display:flex;align-items:center;gap:14px">
+        <div style="width:48px;height:48px;border-radius:50%;background:#FDF3D2;display:flex;align-items:center;justify-content:center;flex:none"><img src="uploads/Artboard 10.png" alt="" style="width:34px"></div>
+        <h2 style="font-family:'Bitter',Georgia,serif;font-size:28px;font-weight:800;color:#0F2350;margin:0">Types of 3D Modeling</h2>
+        <div style="flex:1;height:2px;background:#E3DED2"></div>
+      </div>
+      <p style="margin:0;color:#5A6377">[One sentence introducing that there are several ways to build a 3D model.]</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+        <sc-for list="{{ types }}" as="t" hint-placeholder-count="4">
+          <div style="background:#fff;border:1px solid #E3DED2;border-radius:12px;overflow:hidden;display:flex;flex-direction:column">
+            <div style="aspect-ratio:16/10;background:#F7F5EF;border-bottom:1px solid #E3DED2">
+              <x-import component-from-global-scope="image-slot" id="{{ t.slotId }}" shape="rect" placeholder="{{ t.placeholder }}" style="display:block;width:100%;height:100%" hint-size="100%,100%"></x-import>
+            </div>
+            <div style="padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px">
+              <div style="font-family:'Bitter',Georgia,serif;font-weight:800;font-size:24px;color:#1B9DD9;line-height:1">{{ t.num }}</div>
+              <div style="font-family:'Bitter',Georgia,serif;font-weight:700;font-size:20px;color:#0F2350;line-height:1.25">{{ t.name }}</div>
+              <p style="margin:0;color:#5A6377;text-wrap:pretty">{{ t.desc }}</p>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px">
+                <div style="background:#F7F5EF;color:#0F2350;font-weight:700;font-size:14px;padding:5px 12px;border-radius:999px">{{ t.tool }}</div>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section style="display:flex;flex-direction:column;gap:16px">
+      <div style="display:flex;align-items:center;gap:14px">
+        <div style="width:48px;height:48px;border-radius:50%;background:#FDF3D2;display:flex;align-items:center;justify-content:center;flex:none"><img src="uploads/Artboard 7.png" alt="" style="width:34px"></div>
+        <h2 style="font-family:'Bitter',Georgia,serif;font-size:28px;font-weight:800;color:#0F2350;margin:0">Modeling in This Course</h2>
+        <div style="flex:1;height:2px;background:#E3DED2"></div>
+      </div>
+      <div style="border:2px solid #F5C118;background:#FDF3D2;border-radius:12px;padding:22px 26px;display:flex;flex-direction:column;gap:10px">
+        <div style="font-size:13px;letter-spacing:0.18em;text-transform:uppercase;color:#0F2350;font-weight:700">Up next: TinkerCAD</div>
+        <p style="margin:0;text-wrap:pretty">[Explain which type of modeling students will use in <a href="https://www.tinkercad.com" target="_blank">TinkerCAD</a> — combining primitive shapes — and why it’s a great place to start.]</p>
+      </div>
+    </section>
+  </main>
+
+  <footer style="background:#0F2350">
+    <div style="max-width:1080px;margin:0 auto;padding:32px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px">
+      <div>
+        <div style="font-size:13px;letter-spacing:0.2em;text-transform:uppercase;color:#F5C118;font-weight:700">Questions?</div>
+        <div style="font-family:'Bitter',Georgia,serif;font-weight:700;font-size:22px;color:#fff;margin-top:4px">Innovation Hub Team</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:4px;font-size:16px">
+          <a href="mailto:stemhub@utah.gov" style="color:#B9C6E0">stemhub@utah.gov</a>
+          <a href="https://stem.utah.gov" target="_blank" style="color:#B9C6E0">stem.utah.gov</a>
+        </div>
+      </div>
+      <img src="uploads/UT_STEMActionCenter_InnovationHub_StackedH_M_WHT_NEG_RGB.png" alt="Utah STEM Action Center — Innovation Hub" style="height:40px;display:block">
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const types = [
+      ['Constructive Solid Geometry (CSG) Modeling', '[Build models by combining and subtracting basic shapes like cubes, cylinders, and spheres.]', 'e.g. TinkerCAD', 'Drop an image: shapes combined into an object'],
+      ['Parametric Modeling', '[Models defined by exact measurements and rules that can be edited later — common in engineering.]', 'e.g. Fusion, Onshape', 'Drop an image: a dimensioned engineering part'],
+      ['Polygon / Mesh Modeling', '[Models made of connected points, edges, and faces — common in games and animation.]', 'e.g. Blender', 'Drop an image: a wireframe mesh model'],
+      ['Digital Sculpting', '[Shape a model like digital clay — great for characters and organic forms.]', 'e.g. ZBrush, Nomad', 'Drop an image: a sculpted character or creature'],
+    ];
+    return {
+      types: types.map((t, i) => ({ num: String(i + 1).padStart(2, '0'), slotId: 'type-img-' + (i + 1), name: t[0], desc: t[1], tool: t[2], placeholder: t[3] })),
+    };
+  }
+}
+</script>
+</body>
+</html>
